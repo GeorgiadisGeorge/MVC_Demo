@@ -15,16 +15,6 @@ namespace MVC_Demo.Models.Services
             _trainerRepository = trainerRepository;
         }
 
-        public Trainer GetTrainerById(int id)
-        {
-            return _trainerRepository.GetTrainerById(id);
-        }
-
-        public IEnumerable<Trainer> GetAllTrainers()
-        {
-            return _trainerRepository.GetAllTrainers();
-        }
-
         public void AddTrainer(Trainer trainer)
         {
             _trainerRepository.AddTrainer(trainer);
@@ -38,6 +28,16 @@ namespace MVC_Demo.Models.Services
         public void DeleteTrainer(int id)
         {
             _trainerRepository.DeleteTrainer(id);
+        }
+
+        public Trainer GetTrainerById(int id)
+        {
+            return _trainerRepository.GetTrainerById(id);
+        }
+
+        public List<Trainer> GetAllTrainers()
+        {
+            return _trainerRepository.GetAllTrainers();
         }
     }
 

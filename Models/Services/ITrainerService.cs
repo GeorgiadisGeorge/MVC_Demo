@@ -8,11 +8,11 @@ namespace MVC_Demo.Models.Services
 {
     public interface ITrainerService
     {
-        Trainer GetTrainerById(int id);
-        IEnumerable<Trainer> GetAllTrainers();
         void AddTrainer(Trainer trainer);
         void UpdateTrainer(Trainer trainer);
         void DeleteTrainer(int id);
+        Trainer GetTrainerById(int id);
+        List<Trainer> GetAllTrainers();
     }
 
 }

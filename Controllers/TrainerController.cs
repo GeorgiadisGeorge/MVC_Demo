@@ -12,6 +12,11 @@ namespace MVC_Demo.Controllers
     {
         private readonly ITrainerService _trainerService;
 
+        public TrainerController()
+        {
+        // constructor logic goes here
+        }
+
         public TrainerController(ITrainerService trainerService)
         {
             _trainerService = trainerService;
