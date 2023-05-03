@@ -14,7 +14,7 @@ namespace MVC_Demo.Controllers
 
         public TrainerController()
         {
-        // constructor logic goes here
+        
         }
 
         public TrainerController(ITrainerService trainerService)
